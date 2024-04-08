@@ -226,11 +226,6 @@ p {
     font-size: 15px;
 }
 
-.footer-content {
-    padding: 0 30px;
-    align-items: center;
-}
-
 .footer-bottom .copyright-menu .vistors-details ul li {
     margin: 20px;
     padding: 12px 8px 0;
@@ -239,9 +234,11 @@ p {
 .mb-55 a {
     color: #f0f0f0;
     font-family: "Cairo", sans-serif;
-    font-weight: 30px;
+    font-weight: 25px;
     margin-bottom: 100px;
     padding-bottom: 50px;
+    font-size: 14px;
+    /* إذا كانت العناصر نصاً طويلاً جداً، يمكنك تغيير التدفق ليظهر السهم الأفقي */
 }
 
 .whatsapp-icon {
@@ -342,7 +339,14 @@ p {
         width: 100%;
     }
     .footer-bottom .vistors-details ul li a {
-        width: 15vw;
-        height: 18vw;
+        width: 12vw;
+        height: 15vw;
     }
+    .title {
+        font-size: 25px;
+    }
+}
+
+.title {
+    font-family: "Cairo", sans-serif;
 }
