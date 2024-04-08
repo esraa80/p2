@@ -57,10 +57,12 @@ body {
 
 ul {
     direction: rtl;
+    /* تغيير اتجاه الترقيم إلى اليمين */
 }
 
 ol {
     direction: rtl;
+    /* تغيير اتجاه الترقيم إلى اليمين */
 }
 
 
@@ -86,14 +88,14 @@ section {
 
 .column {
     width: 100%;
-    padding: 0 1em 1em 1em;
+    /* padding: 0 1em 1em 1em; */
     text-align: center;
 }
 
 .card {
     width: 100%;
     height: 100%;
-    padding: 2em 1.5em;
+    /* padding: 2em 1.5em; */
     background: linear-gradient(#ffffff 50%, #7522c8 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
@@ -107,7 +109,7 @@ h3 {
     font-size: 20px;
     font-weight: 600;
     color: #1f194c;
-    margin: 1em 0;
+    /* margin: 1em 0; */
 }
 
 h1 {
@@ -226,6 +228,11 @@ p {
     font-size: 15px;
 }
 
+.footer-content {
+    padding: 0 30px;
+    align-items: center;
+}
+
 .footer-bottom .copyright-menu .vistors-details ul li {
     margin: 20px;
     padding: 12px 8px 0;
@@ -234,11 +241,9 @@ p {
 .mb-55 a {
     color: #f0f0f0;
     font-family: "Cairo", sans-serif;
-    font-weight: 25px;
+    font-weight: 30px;
     margin-bottom: 100px;
     padding-bottom: 50px;
-    font-size: 14px;
-    /* إذا كانت العناصر نصاً طويلاً جداً، يمكنك تغيير التدفق ليظهر السهم الأفقي */
 }
 
 .whatsapp-icon {
@@ -278,9 +283,7 @@ p {
     border-width: 2px;
     background-color: #7522c8;
     color: #f0f0f0;
-}
-
-.footer-bottom .vistors-details ul {
+}.footer-bottom .vistors-details ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,14 +294,14 @@ p {
 .footer-bottom .vistors-details ul li {
     /* margin-right: 10px; */
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
 }
 
 .footer-bottom .vistors-details ul li a {
-    width: 7vw;
-    height: 9vw;
     background: #ffffff;
+    width: 70px;
+    height: 80px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -312,41 +315,44 @@ p {
 }
 
 
+
 /* resonsiveness for mobile app  */
 
-@media only screen and (max-width:700px) {
+@media  only screen and (max-width:700px) {
     /* .rounded-4 {
         max-width: 100vw;
         max-height: 100vh;
 
     } */
-    h1 {
+    body,html{
+        overflow-x: hidden;
+    }
+    h1{
         text-align: center;
         font-size: 14px;
     }
-    .text {
-        font-size: 13px;
-    }
-    .salla {
-        display: inline-block;
-        width: auto;
-    }
-    body,
-    html {
-        overflow-x: hidden;
-    }
-    .column {
-        width: 100%;
-    }
-    .footer-bottom .vistors-details ul li a {
-        width: 12vw;
-        height: 15vw;
-    }
-    .title {
-        font-size: 18px;
-    }
+.text{
+    font-size: 13px;
+}
+.salla {
+   
+        display: inline-block; 
+        width: auto; 
+    
+}
+.column{
+    width: 100%;
+}
+.h8{
+    font-size: 13px;
+
+}
+.title{
+    font-size: 20px;
 }
 
-.title {
-    font-family: "Cairo", sans-serif;
+
+
+
+    
 }
